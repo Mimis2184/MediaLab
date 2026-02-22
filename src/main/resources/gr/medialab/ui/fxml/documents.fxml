@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gr.medialab.ui.controllers.DocumentsController"
+      spacing="10">
+
+    <padding>
+        <Insets top="12" right="12" bottom="12" left="12"/>
+    </padding>
+
+    <HBox spacing="10">
+        <Label text="Category:"/>
+        <ComboBox fx:id="categoryBox" prefWidth="220" onAction="#onCategoryChanged"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button fx:id="watchBtn" text="Watch" onAction="#onToggleWatch"/>
+    </HBox>
+
+    <TableView fx:id="documentsTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="titleCol" text="Title" prefWidth="240"/>
+            <TableColumn fx:id="authorCol" text="Author" prefWidth="160"/>
+            <TableColumn fx:id="dateCol" text="Created At" prefWidth="220"/>
+            <TableColumn fx:id="versionCol" text="Latest Version" prefWidth="120"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Label text="View version:"/>
+        <ComboBox fx:id="versionBox" prefWidth="120" onAction="#onVersionChanged"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button fx:id="createBtn" text="Create" onAction="#onCreate"/>
+        <Button fx:id="editBtn" text="Edit Text" onAction="#onEditText"/>
+        <Button fx:id="deleteBtn" text="Delete" onAction="#onDelete"/>
+    </HBox>
+
+    <Label text="Document text:" style="-fx-font-weight: bold;"/>
+    <TextArea fx:id="textArea" prefHeight="240" wrapText="true"/>
+
+    <Label fx:id="infoLabel" text=""/>
+</VBox>

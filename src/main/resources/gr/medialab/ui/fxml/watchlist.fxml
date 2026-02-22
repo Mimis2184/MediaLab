@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gr.medialab.ui.controllers.WatchlistController"
+      spacing="10">
+
+    <padding>
+        <Insets top="12" right="12" bottom="12" left="12"/>
+    </padding>
+
+    <HBox spacing="10">
+        <Label text="Watched Documents" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button text="Refresh" onAction="#onRefresh"/>
+        <Button text="Unwatch Selected" onAction="#onUnwatchSelected"/>
+    </HBox>
+
+    <TableView fx:id="watchedTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="titleCol" text="Title" prefWidth="240"/>
+            <TableColumn fx:id="authorCol" text="Author" prefWidth="160"/>
+            <TableColumn fx:id="categoryCol" text="Category" prefWidth="160"/>
+            <TableColumn fx:id="versionCol" text="Latest Version" prefWidth="110"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="infoLabel" text=""/>
+</VBox>

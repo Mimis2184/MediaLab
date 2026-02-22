@@ -1,0 +1,78 @@
+[
+  {
+    "id": "cc258726-0e81-421c-a5c2-c17097ef653f",
+    "title": "Doc1",
+    "authorName": "Efthymios",
+    "category": "News",
+    "createdAt": "2026-02-19T19:44:31.414501600",
+    "versions": [
+      {
+        "versionNumber": 1,
+        "text": "Hello\n\nWorld",
+        "createdAt": "2026-02-19T19:44:31.414501600"
+      },
+      {
+        "versionNumber": 2,
+        "text": "Hello v2",
+        "createdAt": "2026-02-19T19:55:57.212257"
+      },
+      {
+        "versionNumber": 3,
+        "text": "ΑΕΚ ",
+        "createdAt": "2026-02-20T11:54:23.382538500"
+      }
+    ]
+  },
+  {
+    "id": "8d88f41c-d73b-42dd-8895-13a3e231c2e6",
+    "title": "PODOSFAIRO",
+    "authorName": "GRIZANITIS",
+    "category": "ElectricalEngineerRenamed",
+    "createdAt": "2026-02-21T19:57:40.301457700",
+    "versions": [
+      {
+        "versionNumber": 1,
+        "text": "ΙΣΟΠΑΛΙΑ",
+        "createdAt": "2026-02-21T19:57:40.301457700"
+      },
+      {
+        "versionNumber": 2,
+        "text": "ΙΣΟΠΑΛΙΑ , ΑΛΛΑΓΗ ",
+        "createdAt": "2026-02-21T20:04:42.739691400"
+      }
+    ]
+  },
+  {
+    "id": "afbb623f-7027-4e7b-ae1d-03cb8f18c00b",
+    "title": "ΡΟΕΣ",
+    "authorName": "Default",
+    "category": "ΡΟΕΣ_ΣΧΟΛΗΣ",
+    "createdAt": "2026-02-21T20:07:34.405338400",
+    "versions": [
+      {
+        "versionNumber": 1,
+        "text": "Υ Λ Η Σ Δ Τ",
+        "createdAt": "2026-02-21T20:07:34.405338400"
+      },
+      {
+        "versionNumber": 2,
+        "text": "Υ Λ Η Σ Δ Τ Για αλλαγή προσθέτω και την ροή Ο",
+        "createdAt": "2026-02-21T21:37:56.099352300"
+      }
+    ]
+  },
+  {
+    "id": "b5599e55-63f3-4551-863e-f539dd58e539",
+    "title": "TRIKALA ",
+    "authorName": "EFTHYMIOS",
+    "category": "NEW_CAT",
+    "createdAt": "2026-02-21T21:37:20.148422200",
+    "versions": [
+      {
+        "versionNumber": 1,
+        "text": "ΜΥΛΟΣ ΞΩΤΙΚΩΝ ",
+        "createdAt": "2026-02-21T21:37:20.148422200"
+      }
+    ]
+  }
+]

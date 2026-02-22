@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gr.medialab.ui.controllers.UsersController"
+      spacing="10">
+
+    <padding>
+        <Insets top="12" right="12" bottom="12" left="12"/>
+    </padding>
+
+    <Label text="Users Management" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10">
+        <Button text="Refresh" onAction="#onRefresh"/>
+        <Button text="Delete Selected" onAction="#onDeleteSelected"/>
+    </HBox>
+
+    <TableView fx:id="usersTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="firstNameCol" text="First Name" prefWidth="140"/>
+            <TableColumn fx:id="lastNameCol" text="Last Name" prefWidth="160"/>
+            <TableColumn fx:id="usernameCol" text="Username" prefWidth="140"/>
+            <TableColumn fx:id="roleCol" text="Role" prefWidth="120"/>
+            <TableColumn fx:id="allowedCol" text="Allowed Categories" prefWidth="260"/>
+        </columns>
+    </TableView>
+
+    <Separator/>
+
+    <Label text="Add / Edit User" style="-fx-font-weight: bold;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20"/>
+            <ColumnConstraints percentWidth="80"/>
+        </columnConstraints>
+
+        <Label text="First name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="firstNameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Last name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="lastNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Username:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="usernameField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Password:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <Label text="Role:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="roleBox" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Allowed categories:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <ListView fx:id="categoriesList" GridPane.rowIndex="5" GridPane.columnIndex="1" prefHeight="120"/>
+
+        <HBox spacing="10" GridPane.rowIndex="6" GridPane.columnIndex="1">
+            <Button text="Load Selected into Form" onAction="#onLoadSelected"/>
+            <Button text="Add New User" onAction="#onAddUser"/>
+            <Button text="Save Changes" onAction="#onSaveChanges"/>
+        </HBox>
+    </GridPane>
+
+    <Label fx:id="infoLabel" text=""/>
+</VBox>

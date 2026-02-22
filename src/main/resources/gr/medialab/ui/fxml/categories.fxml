@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gr.medialab.ui.controllers.CategoriesController"
+      spacing="10">
+
+    <padding>
+        <Insets top="12" right="12" bottom="12" left="12"/>
+    </padding>
+
+    <Label text="Document Categories" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="newCategoryField" promptText="New category name" HBox.hgrow="ALWAYS"/>
+        <Button text="Add" onAction="#onAddCategory"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <TextField fx:id="renameCategoryField" promptText="New name for selected category" HBox.hgrow="ALWAYS"/>
+        <Button text="Rename Selected" onAction="#onRenameSelected"/>
+        <Button text="Delete Selected" onAction="#onDeleteSelected"/>
+    </HBox>
+
+    <ListView fx:id="categoriesList" VBox.vgrow="ALWAYS"/>
+
+    <Label fx:id="infoLabel" text=""/>
+</VBox>

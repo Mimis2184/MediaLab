@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="gr.medialab.ui.controllers.MainController">
+    <top>
+        <HBox spacing="10" style="-fx-background-color: #f4f4f4;">
+            <padding>
+                <Insets top="8" right="12" bottom="8" left="12"/>
+            </padding>
+            <Label fx:id="loggedInAsLabel" text="Logged in as: -" />
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" onAction="#onLogout"/>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="10" prefWidth="260" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+
+            <Label text="Summary" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="10">
+                <Label text="Categories:"/>
+                <Label fx:id="categoriesCountLabel" text="0"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Documents:"/>
+                <Label fx:id="documentsCountLabel" text="0"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Watched:"/>
+                <Label fx:id="watchedCountLabel" text="0"/>
+            </HBox>
+        </VBox>
+    </left>
+
+    <center>
+        <TabPane fx:id="tabPane">
+            <tabs>
+                <Tab text="Documents" fx:id="documentsTab">
+                    <content>
+                        <fx:include source="documents.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Search" fx:id="searchTab">
+                    <content>
+                        <fx:include source="search.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Watchlist" fx:id="watchlistTab">
+                    <content>
+                        <fx:include source="watchlist.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Categories" fx:id="categoriesTab">
+                    <content>
+                        <fx:include source="categories.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Users" fx:id="usersTab">
+                    <content>
+                        <fx:include source="users.fxml"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,52 @@
+[
+  {
+    "firstName": "Default",
+    "lastName": "Admin",
+    "username": "medialab",
+    "password": "medialab_2025",
+    "role": "ADMIN",
+    "allowedCategories": []
+  },
+  {
+    "firstName": "U1",
+    "lastName": "User",
+    "username": "u1",
+    "password": "p1",
+    "role": "USER",
+    "allowedCategories": [
+      "News",
+      "ElectricalEngineerRenamed"
+    ]
+  },
+  {
+    "firstName": "Efthymios ",
+    "lastName": "Grizanitis",
+    "username": "Efthymios1",
+    "password": "p1",
+    "role": "USER",
+    "allowedCategories": [
+      "News",
+      "ElectricalEngineerRenamed"
+    ]
+  },
+  {
+    "firstName": "test_to_see_if_i_change_something_if_its_saved",
+    "lastName": "GRIZANITIS",
+    "username": "Efthymios2_IDK_CHANGED",
+    "password": "p1",
+    "role": "USER",
+    "allowedCategories": [
+      "ElectricalEngineerRenamed"
+    ]
+  },
+  {
+    "firstName": "MATHITIS_POLYMESA",
+    "lastName": "GRIZANITS",
+    "username": "POLYMESA",
+    "password": "POLYMESA",
+    "role": "USER",
+    "allowedCategories": [
+      "ΡΟΕΣ_ΣΧΟΛΗΣ"
+    ]
+  }
+]
