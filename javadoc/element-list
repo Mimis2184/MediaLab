@@ -1,7 +1,0 @@
-gr.medialab.app
-gr.medialab.domain
-gr.medialab.logic
-gr.medialab.persistence
-gr.medialab.ui
-gr.medialab.ui.controllers
-gr.medialab.ui.viewmodels

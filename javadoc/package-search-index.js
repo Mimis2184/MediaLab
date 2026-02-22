@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"gr.medialab.app"},{"l":"gr.medialab.domain"},{"l":"gr.medialab.logic"},{"l":"gr.medialab.persistence"},{"l":"gr.medialab.ui"},{"l":"gr.medialab.ui.controllers"},{"l":"gr.medialab.ui.viewmodels"}];updateSearchResults();
